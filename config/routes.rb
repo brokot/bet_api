@@ -5,4 +5,10 @@ Rails.application.routes.draw do
       post 'new'
     end
   end
+
+  resources :sports, only: [] do
+    collection do
+      post 'new'
+    end
+  end
 end
