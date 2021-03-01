@@ -13,6 +13,9 @@ Rails.application.routes.draw do
     collection do
       post 'new'
     end
+    member do
+      get 'bets'
+    end
   end
 
   resources :bets, only: [] do
