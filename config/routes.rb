@@ -11,4 +11,10 @@ Rails.application.routes.draw do
       post 'new'
     end
   end
+
+  resources :bets, only: [] do
+    collection do
+      post 'new'
+    end
+  end
 end
